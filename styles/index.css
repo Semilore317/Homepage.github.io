@@ -3,12 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease-out;
+  font-family: "Montserrat";
 }
 
 .alpha-wrapper {
-  height: 100vh;
+  height: 100%;
   width: 70rem;
-  border: 2px solid green;
+  background: #52efc0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16,15 +17,13 @@
 }
 .alpha-wrapper header {
   width: 100%;
-  height: 17rem;
+  height: 18rem;
   padding: 1rem;
   display: flex;
   align-items: center;
-  border-radius: 2px solid red;
   overflow: hidden;
   gap: 4rem;
   text-overflow: clip;
-  box-shadow: 0px 2px 21px 2px rgba(0, 0, 0, 0.309);
   /*
   h1{
       animation-delay: 0.3s;
@@ -39,17 +38,48 @@
 .alpha-wrapper header #header-img {
   width: 10rem;
   height: 10rem;
+  margin-left: 2rem;
   border-radius: 5rem;
   animation: spin-out 1s 0s 1 forwards;
+  box-shadow: 2px 0px 1px 1px rgba(255, 255, 255, 0.343);
+  cursor: pointer;
+}
+.alpha-wrapper header #header-img:hover {
+  box-shadow: 2px 0px 1px 1px black;
+  width: 11rem;
+  height: 11rem;
+}
+.alpha-wrapper header::after {
+  content: "";
+  width: 100%;
+  height: 17rem;
+  transform: skewY(-10deg);
+  background: black;
+  background: #05445E;
+  opacity: 1;
+  position: absolute;
+  top: -7rem;
+  left: 0;
+  height: 30rem;
+  z-index: -1;
+  animation: slide-in-2 1s 0s 1 forwards;
+}
+
+#name:hover {
+  letter-spacing: 0.5rem;
 }
 
 .anim-text {
+  color: rgb(223, 223, 223);
+  padding: 0.2rem;
   animation-name: slide-in;
   animation-iteration-count: 1;
   animation-duration: 1s;
-  color: rgb(0, 0, 0);
   animation-delay: 0;
   /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+}
+.anim-text:hover {
+  letter-spacing: 0.05rem;
 }
 
 @keyframes spin-out {
@@ -88,9 +118,23 @@
     opacity: 1;
   }
 }
+@keyframes slide-in-2 {
+  from {
+    transform: translateX(100rem);
+    opacity: 0;
+    transform: skewY(0deg);
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
+    transform: skewY(-10deg);
+  }
+}
 .name-tag {
   position: relative;
   padding: 2rem;
+  width: 60%;
+  padding: 1rem;
 }
 
 .social-links {
@@ -112,10 +156,105 @@
   padding: 1rem;
 }
 .social-links a img {
+  width: 2rem;
+  height: 2rem;
+}
+.social-links a img:hover {
   width: 2.5rem;
   height: 2.5rem;
 }
-.social-links a img:hover {
-  width: 3rem;
-  height: 3rem;
+
+.work {
+  margin-top: 4rem;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+.work ::after {
+  content: "";
+  transform: skewY(5deg);
+  background: blue;
+  background: #354a7a;
+  background: #189ab4;
+  position: absolute;
+  width: 100%;
+  height: 17rem;
+  top: -7rem;
+  left: 0;
+  height: 30rem;
+  z-index: -5;
+}
+.work h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.work-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  row-gap: 2rem;
+}
+
+.work-grid-divs {
+  background: rgb(0, 0, 0);
+  width: 15rem;
+  height: 20rem;
+  padding: 1rem;
+}
+
+/*
+@keyframes work-slide{
+    from{
+        //opacity: 0;
+        transform: translateX(100rem);
+    }
+    to{
+        //opacity: 1;
+        transform: translateX(0rem);
+    }
+}*/
+.screenshot-div img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.screenshot-div img:hover {
+  width: 105%;
+  height: 105%;
+}
+
+.project-name {
+  color: white;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.project-name h6 {
+  font-size: 1rem;
+}
+.project-name img {
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+.project-name img:hover {
+  width: 2rem;
+  height: 2rem;
+  padding: 0rem;
+}
+
+.short-description {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }/*# sourceMappingURL=index.css.map */
