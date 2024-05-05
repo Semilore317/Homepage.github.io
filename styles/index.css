@@ -6,6 +6,10 @@
   font-family: "Montserrat";
 }
 
+svg {
+  fill: #52efc0;
+}
+
 body {
   background: #d4f1f4;
   width: 100vw;
@@ -144,6 +148,9 @@ body {
   width: 60%;
   padding: 1rem;
 }
+.name-tag p {
+  font-size: 1rem;
+}
 
 .social-links {
   position: absolute;
@@ -163,13 +170,12 @@ body {
   height: 1rem;
   padding: 1rem;
 }
-.social-links a img {
-  width: 2.5rem;
-  height: 2.5rem;
+.social-links a svg {
+  width: 2rem;
+  height: 2rem;
 }
-.social-links a img:hover {
-  width: 3rem;
-  height: 3rem;
+.social-links a svg:hover {
+  fill: #026874;
 }
 
 .work {
@@ -312,13 +318,16 @@ footer img {
   height: 4rem;
 }
 
-.text-container img {
+.text-container p {
+  font-size: 1rem;
+}
+.text-container svg {
   width: 3rem;
   height: 3rem;
   padding: 0.1rem;
   cursor: pointer;
 }
-.text-container img:hover {
+.text-container svg:hover {
   width: 3.1rem;
   height: 3.1rem;
 }
