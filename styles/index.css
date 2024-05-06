@@ -287,7 +287,7 @@ footer {
   height: 25rem;
   background: #05445E;
   color: whitesmoke;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "montserrat", sans-serif;
   display: flex;
   flex-direction: row;
   align-items: bottom;
