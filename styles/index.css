@@ -4,6 +4,7 @@
   box-sizing: border-box;
   transition: all 0.3s ease-out;
   font-family: "Montserrat";
+  font-weight: 400;
 }
 
 svg {
@@ -284,6 +285,7 @@ body {
 footer {
   margin-top: 20rem;
   width: 100%;
+  font-weight: 600;
   height: 25rem;
   background: #05445E;
   color: whitesmoke;
