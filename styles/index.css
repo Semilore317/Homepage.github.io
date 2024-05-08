@@ -13,6 +13,7 @@ svg {
 
 body {
   background: #d4f1f4;
+  background: whitesmoke;
   width: 100vw;
 }
 
@@ -37,6 +38,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  font-family: "Times New Roman", Times, serif;
   gap: 4rem;
   /*
   h1{
@@ -185,8 +187,6 @@ body {
   display: grid;
   place-content: center;
   position: relative;
-  padding-left: calc((100vw - 100%) / 2);
-  padding-right: calc((100vw - 100%) / 2);
 }
 .work::before {
   content: "";
@@ -213,6 +213,7 @@ body {
 .work h3 {
   text-align: center;
   font-size: 2rem;
+  font-weight: 600;
   color: whitesmoke;
 }
 
@@ -250,8 +251,8 @@ body {
   cursor: pointer;
 }
 .screenshot-div img:hover {
-  width: 105%;
-  height: 105%;
+  width: 90%;
+  height: 90%;
 }
 
 .project-name {
